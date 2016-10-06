@@ -14,4 +14,10 @@ gulp.task('styles', function() {
             browsers: ['last 2 versions']
         }))
         .pipe(gulp.dest('./css'));
-})
+});
+
+var browserSync = require('browser-sync').create();
+ browserSync.init({
+     server: "./"
+ });
+ browserSync.stream();
