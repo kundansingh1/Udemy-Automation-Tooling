@@ -1,0 +1,1 @@
+alert('javascritp loaded');
